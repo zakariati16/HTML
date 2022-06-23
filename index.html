@@ -1,29 +1,21 @@
 <!DOCTYPE html>
-<!-- //ligne 1 :pour dire que c'est un document QUI ECRIT EN htmL: 5 --> 
-    <!-- ligne4: c'est comme les alocades en java pour dire le debut du programmation  -->
 <html lang="fr">
-    <!-- ligne6: pour personnaliser le titre de la page ou onglet -->
    <head>
      <!-- C'est le titre de ma page -->
     <title>Premiers pas</title>
+    <link rel="stylesheet" href="css/style.css">
    </head>
-   <!-- creation de lien vers une autre page -->
    <body>
     <nav>
         <ul>
-             <li><a href="./">Home</a></li>
+            <li><a href="./">Home</a></li>
             <li><a href="pages/a-propos.html">About</a></li>
             <li><a href="pages/contacts.html">Contacts</a></li>
-            <!-- dans la page home qui est appelee index, elle est toujours en dehors des dossiers -->
-                    <!-- c'est pour ca qu'on ne specifie pas son dossier dans le lien on met que 2points (..)  qui signie revenir en arriere-->
             <li><a href="pages/horaire.html">horaire</a></li>
-            <li><a href="pages/inscription.html">s'inscrire</a></li>
+            <li><a href="pages/inscription.html">S'inscrire</a></li>
         </ul>
     </nav>
-    <!-- a prtir ligne 12 representation hierarchie de titre depuis le plus important jusqu'a le moins important-->
-    <h1>Formation Java</h1>
-    <!-- pour inserer une image /// WIDTH = c'est pour minimiser la dimension de l'image car elle est grand au debut-->
-      <!--alt = c'est pour faire une description de l'image en cas ou ce n'est pas bien telechargee -- -->
+  <h1 class="main-title">Formation Java</h1>
     <img src="images/java.png" width="200" alt="Premier logo de Java" />
     <p>Nous formons des dev fullstack en Java et Jakarta EE</p>
     <!-- <h2>HTML</h2>
@@ -31,18 +23,14 @@
     <h4>Javascript</h4>
     <h5>PHP</h5>
     <h6>Python</h6> -->
-
-    <h2>Les fondamentaux de Java</h2>
-    <!-- inser une image en utilisant une source URl -->
+    <h2 class="text-italic">Les fondamentaux de Java</h2>
     <img src="https://ubiqum.com/assets/uploads/2019/10/screenshot-2021-02-11-at-115416.png" width="150" alt="Logo de Java">
-     <p>
+     <p class="para-1">
         Lorem <strong>Java</strong> ipsum dolor sit, amet consectetur adipisicing elit. Iure, molestias! Recusandae, facilis quae rerum pariatur neque quaerat enim nihil, corrupti modi dolorum ducimus. Incidunt illum adipisci doloremque officia cum ullam!<br />
         Lorem <em>J2EE</em> ipsum dolor sit amet <mark>consectetur</mark> adipisicing elit. Recusandae ut adipisci omnis illum quos, quod blanditiis perspiciatis error pariatur architecto dolorum esse earum vel mollitia dolore reprehenderit, nulla consequuntur tempore.
      </p>
-     <h3>Points a aborder</h3>
-
+     <h3 id="para-1">Points a aborder</h3>
      <!-- Liste ordonnee -->
-     <!-- lister des elements ordonnees avec numeros avec la balise <ol> et <li>=ou on mets chaque contenu qu'on veut en ordre  -->
      <ol>
         <li>Variables et constantes</li>
         <li>Structure de controle</li>
@@ -50,7 +38,15 @@
         <li>Tableaux</li>
         <li>Fonction/Methodes en Java</li>
      </ol>
-
+     <div class="section">
+       <div class="artilcle1">
+         <p>Je suis dans la joie</p>
+         <div class="section-child">
+            <p>Je suis fache</p>
+         </div>
+       </div>
+       <div class="artilcle2"></div>
+     </div>
      Les technologies abordees dans cette formations sont:
     <!-- Liste non ordonnee -->
     <ul>
@@ -61,25 +57,12 @@
         <li><a href="#kubernetes">Kubernetes</a></li>
     </ul>
       <h4 id="spring">Spring</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
+      <p class="text-spring">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinction
+      </p>
       </p>
       <h4 id="angular">Angular</h4>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
@@ -98,82 +81,4 @@
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-      </p>
-      <h4 id="bootstrap">Bootstrap</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-      </p>
-      <h4 id="docker">Docker</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-      </p>
-      <h4 id="kubernetes">Kubernetes</h4>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius distinctio!
-      </p>
-     <h2>Jakarta EE</h2>
-     <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam inventore blanditiis ducimus maxime numquam modi recusandae nesciunt nostrum, a est quo molestias veniam eos eius, repellendus ipsa cum illo dignissimos!
-     </p>
-   </body>
-</html>
-
-
-
-
-
-
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto corporis id, similique veritatis inventore perferendis incidunt temporibus blanditiis sapiente, aperiam eos quia dolore, voluptatibus tenetur deserunt? Dicta iste eius ...

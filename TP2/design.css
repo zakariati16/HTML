@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap');
+.main-title{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.submit{
+    background-color: #4baf4f;
+    border :#4baf4f;
+    color : #fff;
+    margin-top: 30px;
+    padding-top: 10px ;
+    padding-bottom: 10px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+}
+
+
+.formulaire{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+}
+
+.input{
+    border-top-color:transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #000;
+    margin-right: 250px;
+    margin-top : 8px;
+    margin-bottom: 15px;
+    font-size: 25px;
+} 
